@@ -18,12 +18,20 @@ function App() {
   return (
     <div className="App">
 
-      <h1>{price}</h1>
-      <Input stateController={setPrice} />
-      <h1>{quantity}</h1>
-      <Input stateController={setQuantity} />
+      <h1>price {price}</h1>
+      <h1>quantity {quantity}</h1>
 
-      <h1>hello {calc}</h1>
+      <div className='inputWrapper'>
+        <h1>Price: </h1>
+        <Input stateController={setPrice} />
+      </div>
+
+      <div className='inputWrapper'>
+        <h1>Quantity: </h1>
+        <Input stateController={setQuantity} />
+      </div>
+
+      <h1>calc {calc}</h1>
     </div>
   );
 }
